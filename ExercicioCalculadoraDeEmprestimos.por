@@ -5,12 +5,16 @@ programa
 	funcao inicio()
 	{
 		real valoremp,juros, parcelas,total
+		
 		escreva("Olá, qual o valor de emprestimo que voce precisa?\n")
-		leia (valoremp)
-		juros = (valoremp*20)/100
+			leia (valoremp)
+		
 		escreva ("Em quantas parcelas deseja pagar?\n")
-		leia (parcelas)
-		total = (valoremp + juros)/parcelas
+			leia (parcelas)
+		
+			juros = (valoremp*20)/100
+			total = (valoremp + juros)/parcelas
+		
 		escreva("O valor para emprestimo é " + valoremp + " com juros de 20 %, somando mais " + juros + ",ficando o total de " + (valoremp+juros) + " e pagamento em parcelas de " + total)
 		
 	}
